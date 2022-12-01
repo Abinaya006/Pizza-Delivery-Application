@@ -4,6 +4,9 @@ Functionalites implemented:Rest API,Redux Toolkit,Paypal Integration.
 # Getting Started:
 1)Create nextjs app:
      npx create-next-app
+     
+     
+     
 2)Run the development server using the command:
                 yarn dev 
                   (or) 
