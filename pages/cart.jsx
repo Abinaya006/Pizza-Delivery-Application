@@ -165,41 +165,45 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Total:</b>${cart.total}
           </div>
-          {open ? (
-
-<div className={styles.paymentMethods}>
-<button className={styles.payButton}
-  onClick={() => setCash(true)}
->
-  CASH ON DELIVERY
-</button>
-
+          {open ? ( 
+            <div className={styles.paymentMethods}>
+            <button className={styles.payButton} onClick={() => setCash(true)}>
+              CASH ON DELIVERY
+            </button>
             <PayPalScriptProvider
-                options={{
-                    "client-id": "AQXnISRwAZzJmql9A_Xm71B7y45uvoT3pbJCWcwcRBZE4eucdtt9LxZXj-24QdkVfatfOMEnXVkTn0yR",
-                    components: "buttons",
-                    currency: "USD",
-                    "disable-funding": "credit,card,p24",
-                }}
-            >
-				<ButtonWrapper
-                    currency={currency}
-                    showSpinner={false}
-                />
-                </PayPalScriptProvider>
-                </div>
-                  ):(
-          <button onClick={ ()=>setOpen(true)}className={styles.button}>CHECKOUT NOW!</button>
-         
+            options={{
+                "client-id": "AdKvmqWxwP_0vByGtZAC6_Z0PE05QsnTHCW7z8AYM1RlBmJgDtA_qzWqRHK_nihSEBF3LN912NkrL8r3",
+                components: "buttons",
+                currency: "USD",
+                "disable-funding": "credit,card,p24",
+            }}
+        >
+    <ButtonWrapper
+                currency={currency}
+                showSpinner={false}
+            />
+            </PayPalScriptProvider>
+            </div>
+          ):(
+
+
+            
+          <button onClick={()=>setOpen(true)} className={styles.button}>CHECKOUT NOW!</button>
+
+          
           )}
-			
-        </div>
-      </div>
-      {cash && (
+          
+          </div>
+          </div>
+          {cash && (
         <OrderDetail total={cart.total} createOrder={createOrder}/>
       )}
-    </div>
+          </div>
   );
-};
+  };
+      
+    
+     
+    
 
 export default Cart;
