@@ -10,24 +10,24 @@ const Footer = () => {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.motto}>
-            OH YES, WE DID.THE LAMA PIZZA, WELL BAKED SLICE OF PIZZA.
+            OH YES, WE DID.THE "LE PIZZA", WELL BAKED SLICE OF PIZZA.
           </h2>
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>FIND OUR RESTAURANTS</h1>
           <p className={styles.text}>
-            1654 R. Don Road #304.
-            <br /> NewYork, 85022
+            1654 R. MK Road #304.
+            <br /> India, 85022
             <br /> (602) 867-1010
           </p>
           <p className={styles.text}>
-            2356 K. Laquie Rd #235.
-            <br /> NewYork, 85022
+            2356 K. DB Rd #235.
+            <br /> India, 85022
             <br /> (602) 867-1011
           </p>
           <p className={styles.text}>
-            1614 E. Erwin St #104.
-            <br /> NewYork, 85022
+            1614 E. Raja St #104.
+            <br /> India, 85022
             <br /> (602) 867-1012
           </p>
           <p className={styles.text}>
